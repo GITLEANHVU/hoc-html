@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>video 26: tìm hiểu thuộc tính Float</title>
+  <style>
+    div#content>p {
+      float: left;
+    }
+
+    div.box {
+      width: 200px;
+      height: 200px;
+      border: 1px dotted blue;
+      background-color: gray;
+      float: left;
+    }
+
+    p {
+      float: left;
+    }
+
+    /* overlap : tạo 2 box và float box 1 thì box 2 đè lên box 1  */
+
+
+    div#box {
+      margin-bottom: 50px;
+    }
+
+    div.b {
+      width: 60px;
+      height: 60px;
+    }
+
+    .box-1 {
+      background-color: red;
+      float: left;
+    }
+
+    .box-2 {
+      background-color: green;
+      float: left;
+    }
+
+    .box-3 {
+      background-color: yellow;
+      float: left;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div id="box">
+    <div class="box-1 b"></div>
+    <div class="box-2 b"></div>
+    <div class="box-3 b"></div>
+  </div>
+  <!-- làm sao để thoát khỏi normal document flow -->
+  <div id="content">
+    <p>none ipsum dolor sit amet consectetur adipisicing elit</p>
+    <div class="box"></div>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam accusantium labore neque dolore, sed dignissimos
+      magni, odit consequuntur nemo eligendi laborum sint dicta
+      nostrum illum necessitatibus vero officiis, ad ratione?
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora ea facere amet sequi nam quas quae, deleniti
+      ratione rem possimus error quia voluptates laborum alias sit, unde quo qui eaque!
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et quidem explicabo obcaecati ab, pariatur dignissimos
+      eligendi velit. A voluptas, incidunt quos animi voluptatem quaerat sed corporis quis ex placeat. Praesentium.
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur atque, consequuntur inventore saepe porro quo
+      nemo corrupti pariatur harum, non facere quod dolore voluptatum officia nostrum sequi nesciunt earum soluta!
+    </p>
+  </div>
+</body>
+
+</html>

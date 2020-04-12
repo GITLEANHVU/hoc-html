@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>video 15: trình duyệt tính toán giá trị css như thế nào</title>
+</head>
+
+<body>
+  <h1></h1>
+
+  <h2>1. Cascading and inheritance: </h2>
+  <p>Thiết lập giá trị cho toàn bộ css property: specified value(1em, 50px, initial, auto, inherit,...) thiết lập giá trị tương đối tuyệt đối ok cả</p>
+  <h2>2. Computed Value</h2>
+  <p>nó sẽ tính toán từ 1.2em auto... thành Absolute value (tính toán giá trị tương đối sang giá trị tuyệt đối)</p>
+  <h2>3. Used Value</h2>
+  <p>vd: 2 thẻ div... ta quy định 1 thẻ trong là 50% thì nó sẽ thay đổi kích thước phụ thuộc vào thẻ cha của nó.(giai đoạn này dịch html thành dạng cây dom)</p>
+  <hr />
+  <h2>4. Actual Value(nó sẽ làm tròn số và hiển thị đúng giá trị)</h2>
+  <table>
+    <tr>
+      <th>Real</th>
+      <th>Actual</th>
+    </tr>
+    <tr>
+      <td>19.2px</td>
+      <td>19px</td>
+    </tr>
+    <tr>
+      <td>35.75pt</td>
+      <td>36pt</td>
+    </tr>
+  </table>
+  <p>trên là cơ chế để xác định giá trị thuộc tính từ lúc thiết lập đến khi hiển thị.</p>
+
+  <br />
+  <hr />
+
+</body>
+
+</html>

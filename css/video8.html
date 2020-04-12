@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>video 8: tìm hiểu Attibute selector</title>
+  <style>
+    /* tim nhung the nao co attibute la [target] */
+    [target] {
+      background-color: blue;
+    }
+    /* tim nhung the nao co attibute la [target="_self"] (ra 1 thoi)*/
+    [target="_self"] {
+      color: white;
+    }
+
+
+    /* no se duoc phan tach thanh tung tu rieng biet boi khoan tranng */
+    /* tim trong thẻ alt nao co birthcake thi se duoc css het */
+    [alt~="birthcake"]{
+      width: 200px;
+      height: 400px;
+      border-color: yellow;
+    }
+
+
+    /* tim những thẻ nào có alt và chuổi đầu tiên là hinh thì được css hết */
+    /* chi quan tam vị trí bắt đầu. */
+    [alt^="hinh"] {
+      color: red;
+    }
+
+
+    /* tìm thẻ nào có alt và chữ đầu là hình và sau có từ gạch nối */
+    [alt|="hình"]{
+      color: yellowgreen;
+    }
+
+
+    /* tìm những phần tử nào có alt và có giá trị là tim ở vị trí cuối cùng */
+    [alt$="tim"] {
+      color: purple;
+    }
+
+
+    /* tìm những alt nào có value là cake và miễn là có trong alt là được không phân biệt cách khoảng trắng hay không :)*/
+    [alt*="cake"] {
+      color: brown;
+    }
+  </style>
+</head>
+<body>
+  <a href="#target" target="_self">Click me!</a>
+  <p>Một số attibute như: target, atl, ...</p>
+
+  <img src="" alt="birthcake tim " />
+  <img src="" alt="birthcake tron " />
+  <img src="" alt="birthcake dau " />
+  <img src="" alt="flower" />
+
+  <img src="" alt="hinh birthcake tim " />
+  <img src="" alt="hinhbirthcake tron " />
+
+  <img src="" alt="hình-birthcake tim " />
+  <img src="" alt="hìnhbirthcake tron " />
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>video 21: khái niệm về box model (phần 1, phần 2)</title>
+  <style>
+    /* .box>p */
+
+    em {
+      width: 300px;
+      height: 200px;
+      /* border: 3px solid #73AD21; */
+      /* padding-top: 5px;
+      padding-right: 10px;
+      padding-bottom: 12px;
+      padding-left: 20px; */
+      padding: 10px;
+
+      /* border-width: 5px;
+      border-style: solid dashed double dotted;
+      border-color: blue; */
+      border: 5px dotted blue;
+      /* margin-top: 10px;
+      margin-right: 20px;
+      margin-bottom: 15px;
+      margin-left: 1px; */
+      margin: 100px;
+    }
+
+
+    /* vi dụ:  */
+    .box {
+      margin: 50px auto;
+    }
+
+    div {
+      width: 60%;
+      border: 2px dashed blue;
+    }
+  </style>
+</head>
+
+<body>
+  <p>content là nội dung, text, iamge, list được bao quanh là padding ở 4 phía
+    <br /> và tiếp theo là một border và thành cuối là margin: là thành phần ngăn các giữa các element với nhau
+
+  </p>
+
+  <div>
+    <div class="box">
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam laborum in corrupti tempore, sint corporis
+        architecto rem? Voluptatem aspernatur soluta fugiat mollitia sequi itaque, quasi ad eius officia, esse
+        consequuntur.</p>
+    </div>
+  </div>
+
+</body>
+
+</html>

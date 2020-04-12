@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>video 16: tìm hiểu các giá trị màu sắc (Color) trong CSS</title>
+    <style>
+      /* mã hex và */
+      p {
+        color: #0000ff;
+        background-color: rgba(0, 59, 221, 0.5);
+      }
+      /* mã Hue Saturation Lightness */
+      p::first-line {
+        color: hsl(0, 100%, 50%);
+        background-color: hsla(0, 100%, 50%, 0.3);
+        /* Hue: bánh xe màu: red(0 độ)- yellow(60 độ)- green(120 độ)- cyan(180 độ)- blue(240 độ) magenta(300 độ)- quay lại 360 độ là red. */
+        /* Saturation: mức độ mất màu:  màu càng nhạt đọ bảo hòa càng thấp, màu càng đậm độ bảo hòa càng cao
+        đơn vị %: nếu ta cho 100% nguyên góc. còn giảm dần thì nhạt dần sang màu xám.
+        */
+        /* Lightness: độ đen và trắng: 100% là trắng 0% là đen */
+      }
+    </style>
+  </head>
+
+  <body>
+    <p>
+      bảng màu thường dùng color name, hoặc mã hex rgb, hoặc decimal. hex: 0 - 9
+      và A - F vd: #0000FF = blue, #000000 = black;
+      <br />
+      2 ký tự đầu là bảng red, 2 cái giữa là green, 2 cái cuối là blue.
+    </p>
+  </body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>video 29: tìm hiểu thuộc tính Position-static và relative</title>
+  <style>
+    body {
+      font-size: 30px;
+      color: rgb(0, 0, 0);
+    }
+
+    .box {
+      width: 100px;
+      height: 100px;
+    }
+
+    .first {
+      background-color: red;
+      position: static;
+    }
+
+    .second {
+      background-color: green;
+      position: relative;
+      top: 75px;
+      left: 150px;
+    }
+
+    .third {
+      background-color: blue;
+      position: static;
+    }
+  </style>
+</head>
+<!-- static là giá trị mặc đinh rồi nên nếu dùng cái này thì không cần chỉ định position cho element làm gì -->
+<!-- relative là nếu ta muốn di chuyển element đến vị trí khác: có các thuộc tính là top, left, right, bottom -->
+<!-- khi di chuyển element không ảnh hưởng element khác, và gặp hiện tượng overlap đè chồng lên nhau.
+  như vậy: relative và static hoàng toàn giống nhau: thực hiện cơ chế normal element flow: nên dù ta di chuyển phần từ
+nhưng không ảnh hưởng đến các giá trị khác.-->
+
+<body>
+  <div class="container">
+    <div class="first box">1</div>
+    <div class="second box">2</div>
+    <div class="third box">3</div>
+  </div>
+</body>
+
+</html>

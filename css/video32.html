@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>video 32: tìm hiểu thuộc tính z-index</title>
+
+  <style>
+    div p {
+      width: 200px;
+      height: 200px;
+    }
+
+    #p1 {
+      background-color: blue;
+      position: relative;
+      top: 10px;
+      left: 20px;
+      z-index: 30;
+    }
+
+    #p2 {
+      background-color: red;
+      position: relative;
+      top: -40px;
+      left: 40px;
+      z-index: 40;
+    }
+
+    #p3 {
+      background-color: yellow;
+      position: relative;
+      top: -400px;
+      left: 60px;
+      z-index: 29;
+    }
+
+    /* thuộc tính này sẽ giúp cho các element chồng nhau có thể thay đổi đối tượng element chồng nhau. */
+  </style>
+</head>
+
+<body>
+  <div>
+    <p id="p1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim velit consequatur numquam dolores soluta
+      perferendis harum voluptatem, repellendus repellat, odio explicabo optio nostrum, maxime blanditiis aperiam? Dolor
+      sunt impedit temporibus?</p>
+    <p id="p2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim velit consequatur numquam dolores soluta
+      perferendis harum voluptatem, repellendus repellat, odio explicabo optio nostrum, maxime blanditiis aperiam? Dolor
+      sunt impedit temporibus?</p>
+    <p id="p3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim velit consequatur numquam dolores soluta
+      perferendis harum voluptatem, repellendus repellat, odio explicabo optio nostrum, maxime blanditiis aperiam? Dolor
+      sunt impedit temporibus?</p>
+  </div>
+  <!-- video 33: một số thuộc tính thêm c ho background, 34: tìm hiểu thuộc tính border-radius. -->
+</body>
+
+</html>

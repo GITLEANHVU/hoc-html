@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>video 25: tìm hiểu thuộc tính overflow</title>
+  <style>
+    #content {
+      background-color: hsla(60, 100%, 40%, 0.5);
+      min-height: 150px;
+      max-height: 200px;
+      /* visible: giá trị mặc định.  */
+      /* auto, inherit, initial */
+      overflow: auto;
+
+      /* ẩn nhưng chỉ ẩn một phần hiển thì và box vẫn còn đó, còn display: none; thì sẽ mất luôn cả box */
+      visibility: visible;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="content">
+    <p id="p1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci ut dolores cum aspernatur. Tenetur,
+      aspernatur sapiente magni sint, Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto assumenda
+      tempore reprehenderit molestiae, velit amet dicta inventore veniam eaque corrupti natus voluptatum in minus
+      ipsa voluptatibus hic explicabo aut aperiam. minus quo eveniet optio qui corporis itaque ut nisi, hic laudantium
+      veritatis.</p>
+    <p id="p1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci ut dolores cum aspernatur. Tenetur,
+      aspernatur sapiente magni sint, Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto assumenda
+      tempore reprehenderit molestiae, velit amet dicta inventore veniam eaque corrupti natus voluptatum in minus
+      ipsa voluptatibus hic explicabo aut aperiam. minus quo eveniet optio qui corporis itaque ut nisi, hic laudantium
+      veritatis.</p>
+  </div>
+</body>
+
+</html>

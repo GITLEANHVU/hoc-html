@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>video 27: tìm hiểu thuộc tính clear</title>
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+    }
+
+    body {
+      min-width: 780px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    nav ul {
+      display: block;
+      margin: 0;
+      padding: 0;
+
+    }
+
+    nav li {
+      list-style-type: none;
+      float: left;
+    }
+
+    nav li.menu-right {
+      float: right;
+    }
+
+    nav li>a {
+      text-decoration: none;
+      padding: 20px;
+      display: inline-block;
+      width: 90px;
+      text-align: center;
+      line-height: 30px;
+      /* background-color: blue; */
+      font-size: 18px;
+    }
+
+    nav li>a:hover {
+      background-color: rgb(20, 50, 60, 0.8);
+      cursor: pointer;
+      color: #fff;
+    }
+
+    /* nav::after {
+      content: "";
+      display: block;
+      clear: both;
+    } */
+
+    /* cách của Cion.vn */
+    nav::after,
+    nav::before {
+      content: "";
+      /* display: block; */
+      display: table;
+      clear: both;
+    }
+
+    /* đề phòng cho internet explorer 6 và 7 : bị haslayout thì dùng đoạn sau.*/
+    nav {
+      *zoom: 1;
+    }
+
+    div#content {
+      margin-top: 50px;
+    }
+  </style>
+</head>
+
+<body>
+  <nav>
+    <ul>
+      <li><a href="#">item 1</a></li>
+      <li><a href="#">item 2</a></li>
+      <li><a href="#">item 3</a></li>
+      <li><a href="#">item 4</a></li>
+
+      <li class="menu-right"><a href="#">item login</a></li>
+      <li class="menu-right"><a href="#">item logout</a></li>
+    </ul>
+  </nav>
+  <hr />
+  <div id="content">
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tenetur sunt similique, nisi a vitae adipisci doloribus
+      illo, quae aliquam ducimus repellendus at eveniet ipsa totam dolorem facere ullam, exercitationem repellat.
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam minus est, quo quidem fugit dolorem. Dolores autem
+      quo, consequuntur voluptas dignissimos assumenda voluptatem ea molestias labore eveniet soluta culpa dicta?
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet dicta quod rerum cumque odio tempora temporibus,
+      voluptas non eum maiores earum modi sit est labore sed nisi adipisci neque vitae.
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero enim deleniti reiciendis voluptatibus, iure
+      voluptate repellendus error natus quod beatae fugit nemo odio architecto molestias maiores dolorum hic perferendis
+      libero.
+    </p>
+  </div>
+</body>
+
+</html>

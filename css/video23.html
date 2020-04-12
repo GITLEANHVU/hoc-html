@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>video 23: tìm hiểu cơ chế block và inline</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font: 1.1em/1.3 sans-serif;
+      margin: 0;
+      padding: 0 10%;
+    }
+
+    #nav {
+      margin: 1.5em 0;
+    }
+
+    #menu {
+      list-style-type: none;
+    }
+
+    li {
+      display: inline;
+    }
+
+    #menu li>a {
+      text-decoration: none;
+      line-height: 1.5em;
+      text-shadow: 1px 2px blue;
+      color: black;
+
+    }
+
+    #menu li:hover {
+      background-color: rgb(50, 168, 168);
+    }
+
+    div {
+      padding: 10px 20px;
+      background-color: #EEE;
+      border: 10px solid #DDD;
+      width: 100%
+    }
+
+    img {
+      width: 150px;
+      height: 150px;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- cơ chế normal document flow -->
+  <h1>Tìm hiểu block và inline</h1>
+  <div>
+    <p>Với inline thì các phần tử chỉ chiếm
+      đủ kích thướng của mình còn riêng với
+      block thì chiếm hẳn cả dòng.</p>
+    <img src="..." alt="...">
+    <a href="...">w3c.org</a>
+  </div>
+
+  <!-- div, = block -->
+  <div id="nav">
+    <ul id="menu">
+      <li><a href="#">item 1</a></li>
+      <li><a href="#">item 2</a></li>
+      <li><a href="#">item 3</a></li>
+      <li><a href="#">item 4</a></li>
+    </ul>
+  </div>
+
+  <div id="content">
+    <p id="p1">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, unde illum quae molestias iusto corporis et
+      sunt ipsam libero, provident consequuntur voluptatem quo nihil culpa sit perferendis, magni harum quasi!
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, unde illum quae molestias iusto corporis et
+      sunt ipsam libero, provident consequuntur voluptatem quo nihil culpa sit perferendis, magni harum quasi!
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, unde illum quae molestias iusto corporis et
+      sunt ipsam libero, provident consequuntur voluptatem quo nihil culpa sit perferendis, magni harum quasi!
+    </p>
+  </div>
+</body>
+
+</html>

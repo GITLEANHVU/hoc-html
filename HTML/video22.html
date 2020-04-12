@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>video 22: Tổ chức các control và sử dụng một số HTML5 control</title>
+</head>
+<body>
+  <!-- fieldset + legend và label -->
+  <form action="" name="" method="GET">
+    <fieldset>
+      <legend>Accout</legend>
+      <label for="txtUsr"></label>
+      <input id="txtUsr" type="text" name="txtUsr" /> <br />
+      <label for="txtPwd"></label>
+      <input id="txtPwd" type="password" name="txtPwd" /> <br />
+    </fieldset>
+
+    <fieldset>
+      <legend>Personal</legend>
+
+      <label for="lastN"></label>
+      <input id="lastN" type="text" name="lastN" value="Họ"/>
+      <br/>
+
+      <label for="FirstN"></label>
+      <input id="FirstN" type="text" name="FirstN" value="Tên"/>
+      <br/>
+
+      <!-- radiobox -->
+      <input type="radio" name="sex" id="Nam" checked> Nam
+      <input type="radio" name="sex" id="Nữ"> Nữ
+    </fieldset>
+
+    <input type="submit" name="btnSbmit" value="Submit"/>
+  </form>
+
+  <form action="">
+    <input type="date">
+    <input type="range" name="" min="0" max="255" step="1" value="126">
+    <input type="color" name="" value="#ffffff">
+  </form>
+</body>
+</html>

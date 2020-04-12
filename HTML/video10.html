@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>video 10: HTML Object & Embed tag</title>
+</head>
+<body>
+  <!-- Ít được sử dụng ngày nay :) -->
+
+
+  
+  <!-- thẻ object để nhúng các html plugin để đọc các file -->
+  <object data="img/cake1.jpg" type="image/jpg">
+    Bánh sinh nhật.
+  </object>
+  <object data="video.mp4" width="800" height="600">
+    <!-- parameter: định nghĩa các tham số video plugin. -->
+    <!-- name tên tham số: value: giá trị tham số đó -->
+    <param name="quality" value="high">
+    <param name="autoplay" value="true">
+  </object>
+
+  <!-- chỉ dùng cho html 5 -->
+  <embed src="video.mp4" width="800" height="600" qulity="high" >
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>video 30: tìm hiểu thuộc tính position - absolute</title>
+  <style>
+    body {
+      font-size: 30px;
+      color: rgb(0, 0, 0);
+    }
+
+    div.container {
+      position: relative;
+      top: 20px;
+      left: 50px;
+      background-color: yellow;
+    }
+
+    .box {
+      width: 100px;
+      height: 100px;
+    }
+
+    .first {
+      background-color: red;
+      position: absolute;
+      left: 200px;
+      top: 50px;
+    }
+
+    .second {
+      background-color: green;
+      position: static;
+    }
+
+    .third {
+      background-color: blue;
+      position: static;
+    }
+  </style>
+</head>
+<!-- relative>absolute>absolute ... -->
+
+<body>
+  <!-- cơ chế này giống float và sảy ra hiện tượn overflow 
+  absolute: dựa trên phần tử cha gần nhất để xác định vị trí.(positioned element, positioning context)
+  khi nó giá trị là relitive hoặc là absolute thì nó sẽ trở thành một positioned element
+  viewport: là kích thước màn hình mà trình duyệt hiển thị.
+  -->
+  <div class="container">
+    <div class="first box">1</div>
+    <div class="second box">2</div>
+    <div class="third box">3</div>
+  </div>
+
+  <!-- làm sao để biết một element là:  positioned element hay positioning context:
+ta chỉ cần xem thuộc tính position: là relative hay absolute
+-->
+</body>
+
+</html>

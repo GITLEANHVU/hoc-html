@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>video 24: tìm hiểu thuộc tính box sizing</title>
+  <style>
+    html {
+      height: 100%;
+    }
+
+    body {
+      height: 100%;
+    }
+
+    #nav a {
+      /* vì là element inline nên margin top và margin bottom không không thể tạo được
+      
+      đồng thời width và height cùng không hiển thị luôn */
+      margin: 10px 10px;
+      border: 1px dotted purple;
+      /* vậy làm sao để có thể sử dụng các thuộc tính width và height như thẻ block ta dùng display: block-inline */
+      display: inline-block;
+      width: 100px;
+      height: 50px;
+      text-align: center;
+    }
+
+    .content {
+      margin-top: 10px;
+      width: 50%;
+      height: 100%;
+      background-color: gray;
+      opacity: 0.5;
+      color: black;
+      /* dùng tuộc tính này sẽ giúp 2 box có kích thước bằng nhau.  */
+      box-sizing: border-box;
+      /* nhỏ hơn 320px thì không nhỏ hơn nữa */
+      min-width: 320px;
+      /* lớn tới 450px thì không lớn hơn nữa */
+      max-width: 450px;
+    }
+
+    .box {
+      padding: 50px;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="nav">
+    <a href="#">item 1</a>
+    <a href="#">item 2</a>
+    <a href="#">item 3</a>
+    <a href="#">item 4</a>
+  </div>
+
+  <div class="content">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+    Hic, cum quae dignissimos repudiandae eum aperiam officia est doloribus qui,
+    similique voluptatum,
+    accusantium officiis? Culpa maxime sequi soluta eaque quaerat nisi.
+  </div>
+
+  <div class="content box">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+    Hic, cum quae dignissimos repudiandae eum aperiam officia est doloribus qui,
+    similique voluptatum,
+    accusantium officiis? Culpa maxime sequi soluta eaque quaerat nisi.
+  </div>
+</body>
+
+</html>

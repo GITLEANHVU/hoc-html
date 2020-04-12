@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>video 19 các thuộc tính liên quan đến văn bản phần 2</title>
+  <style>
+    p {
+      /* tạo độ bóng cho chữ  */
+      /* horizontal shadow (h-shadow): bóng đổ về trái hoặc phải*/
+      /* vertical shadow(v-shadow):  bóng đổ lên hoặc xuống*/
+      /* blur radius: độ mờ:  */
+      /* color: vd: blue */
+      /* tạo được nhiều bóng đổ */
+      text-shadow: 5px 5px 3px rgb(172, 96, 96), -10px -10px #f0f;
+
+
+    }
+
+    div {
+      background-color: yellowgreen;
+      width: 250px;
+      height: 100px;
+    }
+
+    div>p {
+      /* chữ sẽ bị tràn ra khỏi box div 250x100 */
+
+      white-space: nowrap;
+      /* nó sẽ ẩn chữ bị tràn */
+      overflow: hidden;
+      /* nó giúp ta ẩn chữ tràn và khuyến mãi dấu 3 chấm ... */
+      text-overflow: ellipsis;
+    }
+
+    div#ngacdong>a {
+      word-wrap: break-word;
+    }
+  </style>
+</head>
+
+<body>
+  <p>
+    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+    Temporibus in provident officiis fugit ea, molestias, nam
+    ullam nemo voluptatibus, voluptas delectus hic iure harum
+    quibusdam distinctio velit culpa sequi ex.
+  </p>
+  <br /><br /><br />
+  <div>
+    <p>Đoạn này bị overflow nghĩa là chữ trang ra ngoài</p>
+    ví du
+  </div>
+  <br /><br /><br />
+  <div id="ngacdong">
+    <a href="#vidu">Đoạnnàybịoverflownghialàchữtrangngoài</a>
+  </div>
+</body>
+
+</html>

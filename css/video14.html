@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>video 14: kiểu dữ liệu văn bản và số trong css</title>
+  <style>
+    p {
+      color: blue;
+    }
+    strong {
+      /* kiểu initial */
+      color: initial;
+    }
+
+    p{
+      color: red;
+    }
+    p a {
+      /* kiểu inherit */
+      color: inherit;
+
+    }
+
+    p::after {
+      /* kiểu string */
+      content: "đây là chuỗi được hiển thị bởi property là content: nội dung; ";
+    }
+    p > a::after{
+      /* đặt trong dấu nháy đơn hoặc nháy kép. */
+      content: url('./image/cat.jpg');
+    }
+
+    /* kiểu số */
+  </style>
+</head>
+<body>
+  <p>
+    <strong>Initial</strong> là giá trị giúp element khôi phục giá trị ban đầu của elemenet đó. 
+  </p>
+  <p>
+    giá trị auto; ví dụ: width: 200; mà height: auto; hoặc không giá trị thì height sẽ tự dản theo nội dung trong 
+  </p>
+  <p>
+    <a href="#inherit">inherit</a> là giá trị mà nó được kế thừa từ cha nó.
+  </p>
+</body>
+</html>
